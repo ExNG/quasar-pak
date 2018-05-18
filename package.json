@@ -1,0 +1,18 @@
+{
+  "name": "quasar-pak",
+  "productName": "QuasarPak",
+  "version": "0.0.1",
+  "description": "Package Quasar Electron apps installer",
+  "author": "Johann Behr <johannbehr@exng.de>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ExNG/quasar-pak.git"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
