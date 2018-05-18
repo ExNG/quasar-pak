@@ -12,7 +12,7 @@ Run a node script with following code after quasar build
 
 ```javascript
 // <quasar app>/scripts/buildDebian.js
-var pak = require('./quasar-pak/src/pak.js')
+var pak = require('quasar-pak')
 var path = require('path')
 
 pak.debian({
