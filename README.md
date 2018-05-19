@@ -8,7 +8,7 @@
 
 ## Debian
 
-Run a node script with following code after quasar build
+Run a node script with following code after quasar build.
 
 ```javascript
 // <quasar app>/scripts/buildDebian.js
@@ -23,8 +23,9 @@ pak.debian({
 })
 ```
 
-| Value   | Description                                                                            |
-| ------- | -------------------------------------------------------------------------------------- |
-| package | All data from `package.json`, necessary to get path for binaries and dekstop file name |
-| dist    | Path to `dist/electron-<theme used, default: mat>` folder                              |
-| dest    | Path to dir where deb file be located                                                  |
+| Value    | Description                                                                            |
+| -------- | -------------------------------------------------------------------------------------- |
+| package  | All data from `package.json`, necessary to get path for binaries and dekstop file name |
+| dist     | Path to `dist/electron-<theme used, default: mat>` folder                              |
+| dest     | Path to dir where deb file be located                                                  |
+| filename | name of the deb file, _Add `.deb` to the filename by yourself_                         |
