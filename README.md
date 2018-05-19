@@ -29,4 +29,5 @@ pak.debian({
 | dist                | Path to `dist/electron-<theme used, default: mat>` folder                              |
 | distArch _Optional_ | Architecture of Quasar build. Default: "x64"                                           |
 | dest                | Path to dir where deb file be located                                                  |
+| debArch _Optional_  | Architecture of deb file. Default: "amd64"                                             |
 | filename            | name of the deb file, _Add `.deb` to the filename by yourself_                         |
