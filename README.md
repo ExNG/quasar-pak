@@ -23,9 +23,10 @@ pak.debian({
 })
 ```
 
-| Value    | Description                                                                            |
-| -------- | -------------------------------------------------------------------------------------- |
-| package  | All data from `package.json`, necessary to get path for binaries and dekstop file name |
-| dist     | Path to `dist/electron-<theme used, default: mat>` folder                              |
-| dest     | Path to dir where deb file be located                                                  |
-| filename | name of the deb file, _Add `.deb` to the filename by yourself_                         |
+| Value               | Description                                                                            |
+| ------------------- | -------------------------------------------------------------------------------------- |
+| package             | All data from `package.json`, necessary to get path for binaries and dekstop file name |
+| dist                | Path to `dist/electron-<theme used, default: mat>` folder                              |
+| distArch _Optional_ | Architecture of Quasar build. Default: "x64"                                           |
+| dest                | Path to dir where deb file be located                                                  |
+| filename            | name of the deb file, _Add `.deb` to the filename by yourself_                         |
