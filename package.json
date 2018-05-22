@@ -12,6 +12,10 @@
     "type": "git",
     "url": "git+https://github.com/ExNG/quasar-pak.git"
   },
+  "bugs": {
+    "url": "https://github.com/ExNG/quasar-pak/issues"
+  },
+  "homepage": "https://github.com/ExNG/quasar-pak#readme",
   "license": "MIT",
   "dependencies": {
     "shelljs": "^0.8.2"
