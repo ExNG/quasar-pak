@@ -31,3 +31,9 @@ pak.debian({
 | dest                | Path to dir where deb file be located                                                  |
 | debArch _Optional_  | Architecture of deb file. Default: "amd64"                                             |
 | filename            | name of the deb file, _Add `.deb` to the filename by yourself_                         |
+
+## License
+
+[MIT](http://opensource.org/licenses/MIT)
+
+Copyright (c) 2018-present, Johann Behr
