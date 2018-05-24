@@ -6,7 +6,7 @@
   "author": "Johann Behr <johannbehr@exng.de>",
   "main": "src/pak.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node scripts/test.js"
   },
   "repository": {
     "type": "git",
