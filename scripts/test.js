@@ -14,6 +14,10 @@ var log = (str) => {
  */
 var runAll = (dir) => {
   // Get dir content
+  if (!fs.existsSync(dir)) {
+    log('No test folder!')
+    return
+  }
   let files = fs.readdirSync(dir)
 
   files.forEach(function(file) {
@@ -26,7 +30,13 @@ var runAll = (dir) => {
       // Its a test, run it
       log(`        => Running ${filepath}`)
       // TODO: ES6 modules obviously wont work
-      require(filepath).forEach(test => test())
+
+      let files = require(filepath)
+      if (typeof files === 'object') {
+        files.forEach(test => test())
+      } else {
+        log('Test has not the right format!')
+      }
     }
   })
 }
