@@ -6,6 +6,12 @@
 
 * * *
 
+## Install
+
+```bash
+npm i -D quasar-pak
+```
+
 ## Debian
 
 Run a node script with following code after quasar build.
