@@ -12,9 +12,6 @@ appimageTemp = helper.mkdir(appimageTemp)
 
 module.exports = [
   () => {
-    // Clear temp folder to be sure
-    // shell.exec(`rm -rf ${temp}/*`)
-
     // Clone boilerplate
     shell.exec([
       `cd ${bTemp}`,
@@ -27,6 +24,6 @@ module.exports = [
       dest: appimageTemp
     })
 
-    console.log('appimageTemp', appimageTemp)
+    // TODO: Add asserts
   }
 ]
