@@ -12,6 +12,32 @@ npm i -D quasar-pak
 
 or if you want the bleeding edge: `npm i -D https://github.com/ExNG/quasar-pak.git`
 
+## AppImage
+
+Create a AppImage file from your Quasar Electron App.
+
+```javascript
+var pak = require('quasar-pak')
+var path = require('path')
+
+pak.appimage({
+  // Your package.json file, location of the the script assumes to be in a script folder
+  package: require('../package.json'),
+
+  // Dist is where your electron builds are located
+  dist: path.join(__dirname, '../dist/electron-ios/'),
+
+  // Dest is where the AppImage file will go
+  dest: path.join(__dirname, '../dist')
+})
+```
+
+| Value   | Description                                                                            |
+| ------- | -------------------------------------------------------------------------------------- |
+| package | All data from `package.json`, necessary to get path for binaries and dekstop file name |
+| dist    | Path to `dist/electron-<theme used, default: mat>` folder                              |
+| dest    | Path to dir where AppImage file be located                                             |
+
 ## Debian
 
 Run a node script with following code after quasar build.
