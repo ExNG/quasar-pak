@@ -1,4 +1,4 @@
-# Quasar-Pak
+# Quasar-Pak -- **Discontinued**
 
 > Easily create linux installer from [Quasar](https://quasar-framework.org/) Electron apps
 
